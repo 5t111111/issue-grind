@@ -19,6 +19,7 @@ class Settings extends React.Component {
     localStorage.setItem("username", username);
     localStorage.setItem("repository", repository);
     localStorage.setItem("issueNumber", issueNumber);
+    this.props.history.push("/");
   };
 
   render() {

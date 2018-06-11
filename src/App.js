@@ -1,15 +1,17 @@
 import React from "react";
-import { Route } from "react-router-dom";
-import Settings from "./components/Settings";
+import { Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
 import Slide from "./components/Slide";
+import Settings from "./components/Settings";
 
-const App = () => {
-  return (
-    <div>
+const App = () => (
+  <div>
+    <Switch>
+      <Route exact path="/" component={Home} />
       <Route path="/slide" component={Slide} />
       <Route path="/settings" component={Settings} />
-    </div>
-  );
-};
+    </Switch>
+  </div>
+);
 
 export default App;
