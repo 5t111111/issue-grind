@@ -18,6 +18,7 @@
     "document": true,
     "window": true,
     "console": true,
+    "localStorage": true,
     "process": true
   }
 }

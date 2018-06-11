@@ -9,7 +9,7 @@ const Title = ({ title, authorLogin, authorAvatarUrl, bodyHTML }) => (
       <h4>{authorLogin}</h4>
       <img src={authorAvatarUrl} />
     </div>
-    <Link to="/1">START</Link>
+    <Link to="/slide/1">START</Link>
   </Fragment>
 );
 
