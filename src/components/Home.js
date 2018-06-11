@@ -7,11 +7,28 @@ const Home = () => {
   const issueNumber = localStorage.getItem("issueNumber");
 
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
+      <h1 style={{ fontWeight: "bold", fontSize: "15vw" }}>ISSUE GRIND</h1>
       {username && repository && issueNumber ? (
-        <Link to="/slide">Show Slide</Link>
+        <div>
+          <Link
+            to="/slide"
+            className="button is-medium"
+            style={{ width: "50vw" }}
+          >
+            Show Slide
+          </Link>
+        </div>
       ) : null}
-      <Link to="/settings">Settings</Link>
+      <div style={{ marginTop: "20px" }}>
+        <Link
+          to="/settings"
+          className="button is-medium"
+          style={{ width: "50vw" }}
+        >
+          Settings
+        </Link>
+      </div>
     </div>
   );
 };

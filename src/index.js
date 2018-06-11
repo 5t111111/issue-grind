@@ -5,6 +5,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
+import "bulma/css/bulma.min.css";
 
 const client = new ApolloClient({
   uri: "https://api.github.com/graphql",
